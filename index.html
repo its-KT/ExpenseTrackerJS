@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body bgcolor="red">
+    <div class="container">
+        <h1 class="mt-5 mb-4">Expense Tracker</h1>
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="expenseName">Expense Name</label>
+                <input type="text" class="form-control" id="expenseName" required>
+            </div>
+            <div class="form-group">
+                <label for="expenseAmount">Amount</label>
+                <input type="number" class="form-control" id="expenseAmount" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Expense</button>
+        </form>
+        <div id="expenseList" class="mt-4">
+            <!-- Expenses will be listed here -->
+        </div>
+        <div class="mt-4">
+            <h4>Total Expenses: <span id="totalExpenses">0</span></h4>
+        </div>
+    </div>
+    <script src="inde.js"></script>
+</body>
+</html>
